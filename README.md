@@ -1,6 +1,26 @@
 # Project Proposal
 
+**Project Name:** RustyCanvas, an embedded canvas with web server
+
+**Collaborators:** Rohan Datta, Eric Chiang, Alexander Short
+
+## Table of Contents
+
+* [Motivation](#motivation)
+    * [Background](#background)
+    * [Challenge](#challenge)
+    * [Problem Statement](#problem-statement)
+* [Objective and Key Features](#objective-and-key-features)
+    * [Objective](#objective)
+    * [Demonstration Strategy](#demonstration)
+    * [Key Features](#key-features)
+    * [Additional Features](#additional-features)
+    * [Evaluation Criteria](#evaluation-criteria)
+* [Tentative Plan](#tentative-plan)
+
 ## Motivation
+
+### Background
 What motivated your team to spend time on this project? An excellent project idea is satisfying and fun to work on, and fills a gap that may not be easily found in the Rust ecosystem.
 
 ## Objective and Key Features
