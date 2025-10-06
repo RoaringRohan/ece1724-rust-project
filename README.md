@@ -78,7 +78,15 @@ Aside from the key features, we've also added in a couple of additional features
 For our implementation, we are using a 32x32 dot-matrix OLED module as the canvas, and ESP32 development board to control the OLED module as well as communicate with our back-end webserver. There would also be a front-end interface which users can access through their computers which would then relay information to the back-end server where it gets processed and ultimately reflects changes in the OLED screen on the hardware.
 
 ### Evaluation Criteria
+In order to evaluate the functionality of our project, we've implemented some criteria. These criteria make sure that the project meets its main objective as well as prove that we found a robust, reliable solution to our challenge.
 
+1. **Secure Endpoints**: Whether we use RESTful or WebSocket endpoints, they must prevent malicious pixel updates which could lead to injection attacks.
+
+2. **Proper OLED Screen Functionality**: The ESP32 OLED module must render the pixel data without synchronization errors.
+
+3. **Network Accessibility**: The system must be accessible via a public URL or local network URL, allowing users to connect from their personal devices
+
+4. **Concurrency**: Back-end server must be able to reliably handle at least five users interacting with the canvas at the same time.
 
 ### Contributing to the Rust Ecosystem
 
