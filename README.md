@@ -18,6 +18,9 @@
     * [Evaluation Criteria](#evaluation-criteria)
     * [Contributing to the Rust Ecosystem](#contributing-to-the-rust-ecosystem)
 * [Tentative Plan](#tentative-plan)
+    * [Eric](#eric)  
+    * [Rohan](#rohan) 
+    * [Alex](#alex) 
 
 ## Motivation
 
@@ -37,7 +40,7 @@ Additionally, we are all avid internet surfers, so we wanted to replicate a fun 
 
 Our project proposes to replicate the online phenomenon that is Reddit’s r/place. On April 1st 2023, Reddit created the r/place subreddit, where users could place a single pixel on a large collaborative canvas, every 5~20 minutes. Users from different subreddits and online fandoms quickly were able to collaborate together to create large pictures and murals from with thousands of pixels. The final collage from r/place can be seen below. 
 
-![r/place](images/rplace.png)
+![r/place](assets/image.png)
 
 We are excited about this project because it puts a good use case for using Rust in a coherent low-level hardware, real-time networking, and user interface web design project. This project fits our group because each of us can contribute our unique expertise while also learning new Rust skills. In essence, we are making a collaborative digital art experiment that others can interact with. Most importantly, this project fills a gap in the Rust ecosystem by showing how Rust can act as a middle-ware language for hardware and software collaborative projects.
 
@@ -92,4 +95,18 @@ In order to evaluate the functionality of our project, we've implemented some cr
 These features fill a gap in the Rust ecosystem by demonstrating the idea of integrating a full-stack development into one project using one language. From back-end web services to user interfaces and embedded hardware control, we are creating a unified type-safe and memory-sophisticated framework. By doing this project, we are proving rust can be a solution for an end-to-end system meant for performance-critical, concurrent, and networked applications while also introducing a new use case for rust projects that can bring innovation in Rust-based embedded and web integration.
 
 ## Tentative Plan
-Briefly and concisely, describe how your team plans to achieve the project objective in a matter of weeks, with clear descriptions of responsibilities for each team member in the team. As the duration of the project is quite short, there is no need to include milestones and tentative dates.
+To ensure we complete this project in an optimal manner (over the next three months), we are dividing the tasks to match each team member’s skill sets.  
+### Eric  
+- Develop the embedded driver support for the selected LED dot matrix. This driver should interact with the LED matrix at a register/hardware level and abstract higher level functions for ease of control for the backend. This driver should include functions to initialize/deinitialize the LED dot matrix, turn off selected LEDs in the matrix, set LEDs to the user’s chosen colour. A possible Rust crate needed for this capability is _esp32_ and _esp-idf-hal_.  
+- Mechanical design of the project. As there is physical hardware involved in this project, some sort of mechanical enclosure is required. Additionally, wiring and supplying power to the project will also be required.  
+
+### Rohan
+- Work on the backend server where the API is held. Ensuring the API protocols that are being implemented are appropriate and have secure endpoints.  
+- Build the front-end using a Rust crate similar to React in JavaScript.  
+- Deploy backend server and frontend website to the cloud. Ensuring that users can access the frontend from anywhere.  
+
+### Alex
+- Set up the commissioning process for the server, allowing multiple users to join and interact with the LED matrix simultaneously. The ESP32 will run SoftAP (Access Point) act as a temporary wifi access point, run the web server, the user can then connect to the ESP32 and enter their wifi credentials. The user will then be connected and can start sending commands to the LED matrix. An expected Rust crates to be used for this implementation will be _esp-wifi_.  
+- Electrical hardware design of the project, including breadboards, ESP32C6 development board, and relevant peripherals.  
+
+
