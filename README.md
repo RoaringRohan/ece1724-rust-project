@@ -89,7 +89,7 @@ In order to evaluate the functionality of our project, we've implemented some cr
 4. **Concurrency**: Back-end server must be able to reliably handle at least five users interacting with the canvas at the same time.
 
 ### Contributing to the Rust Ecosystem
-
+These features fill a gap in the Rust ecosystem by demonstrating the idea of integrating a full-stack development into one project using one language. From back-end web services to user interfaces and embedded hardware control, we are creating a unified type-safe and memory-sophisticated framework. By doing this project, we are proving rust can be a solution for an end-to-end system meant for performance-critical, concurrent, and networked applications while also introducing a new use case for rust projects that can bring innovation in Rust-based embedded and web integration.
 
 ## Tentative Plan
 Briefly and concisely, describe how your team plans to achieve the project objective in a matter of weeks, with clear descriptions of responsibilities for each team member in the team. As the duration of the project is quite short, there is no need to include milestones and tentative dates.
