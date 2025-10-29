@@ -1,4 +1,4 @@
-use axum::{Router, serve};
+use axum::serve;
 use std::net::SocketAddr;
 use tokio::net::TcpListener;
 
